@@ -57,6 +57,7 @@
     for (CAShapeLayer* layer in _shapeLayers) {
         [layer removeFromSuperlayer];
     }
+    _shapeLayers = [NSMutableArray array];
     _scaledPaths = [NSMutableArray array];
     _svg = [FSSVG svgWithFile:mapName];
 
